@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E37F30A1C58EC07009B9476 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E37F3091C58EC07009B9476 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1E37F30C1C58EC52009B9476 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E37F30B1C58EC52009B9476 /* libicucore.tbd */; };
 		1E715ECA1C58D5010031E2DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E715EC91C58D5010031E2DA /* main.m */; };
 		1E715ECD1C58D5010031E2DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E715ECC1C58D5010031E2DA /* AppDelegate.m */; };
 		1E715ED01C58D5010031E2DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E715ECF1C58D5010031E2DA /* ViewController.m */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E37F3081C58EC07009B9476 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		1E37F3091C58EC07009B9476 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		1E37F30B1C58EC52009B9476 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		1E715EC41C58D5010031E2DA /* 正则表达式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "正则表达式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E715EC81C58D5010031E2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E715EC91C58D5010031E2DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E37F30C1C58EC52009B9476 /* libicucore.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E37F3071C58EBF5009B9476 /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				1E37F3081C58EC07009B9476 /* RegexKitLite.h */,
+				1E37F3091C58EC07009B9476 /* RegexKitLite.m */,
+			);
+			path = RegexKitLite;
+			sourceTree = "<group>";
+		};
 		1E715EBB1C58D5010031E2DA = {
 			isa = PBXGroup;
 			children = (
+				1E37F30B1C58EC52009B9476 /* libicucore.tbd */,
 				1E715EC61C58D5010031E2DA /* 正则表达式 */,
 				1E715EE01C58D5010031E2DA /* 正则表达式Tests */,
 				1E715EC51C58D5010031E2DA /* Products */,
@@ -81,6 +97,7 @@
 		1E715EC61C58D5010031E2DA /* 正则表达式 */ = {
 			isa = PBXGroup;
 			children = (
+				1E37F3071C58EBF5009B9476 /* RegexKitLite */,
 				1E715ECB1C58D5010031E2DA /* AppDelegate.h */,
 				1E715ECC1C58D5010031E2DA /* AppDelegate.m */,
 				1E715ECE1C58D5010031E2DA /* ViewController.h */,
@@ -221,6 +238,7 @@
 			files = (
 				1E715ED01C58D5010031E2DA /* ViewController.m in Sources */,
 				1E715ECD1C58D5010031E2DA /* AppDelegate.m in Sources */,
+				1E37F30A1C58EC07009B9476 /* RegexKitLite.m in Sources */,
 				1E715ECA1C58D5010031E2DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +434,7 @@
 				1E715EE91C58D5010031E2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E715EEA1C58D5010031E2DA /* Build configuration list for PBXNativeTarget "正则表达式Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				1E715EEC1C58D5010031E2DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
